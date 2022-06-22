@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "git-pages": "^0.8.1"
   }
 }
