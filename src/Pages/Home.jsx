@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Home = (props) => {
+  const { burger } = props;
   return (
     <div className="homepage ">
       <div className="container">
@@ -21,7 +22,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Link className="home__button" to="/destination/moon">
+      <Link
+        className={burger === true ? "home__button active" : "home__button"}
+        to="/destination/moon"
+      >
         <button className="home--button">Explore</button>
       </Link>
     </div>
